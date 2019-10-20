@@ -1,4 +1,4 @@
-# Exercício práticos - teoria dos grafos 2019.2
+# Exercícios práticos - teoria dos grafos 2019.2
 
 ***
 EPG-02
