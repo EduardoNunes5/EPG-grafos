@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-io/src/main/main.iml" filepath="$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-io/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-guava/src/main/main1.iml" filepath="$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-guava/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-ext/src/main/main2.iml" filepath="$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-ext/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-demo/src/main/main3.iml" filepath="$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-demo/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-core/src/main/main4.iml" filepath="$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-core/src/main/main4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-opt/src/main/main5.iml" filepath="$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-opt/src/main/main5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EPG02-20192/src/main/main6.iml" filepath="$PROJECT_DIR$/EPG02-20192/src/main/main6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-guava/src/test/test.iml" filepath="$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-guava/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-core/src/test/test1.iml" filepath="$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-core/src/test/test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-io/src/test/test2.iml" filepath="$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-io/src/test/test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-ext/src/test/test3.iml" filepath="$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-ext/src/test/test3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-opt/src/test/test4.iml" filepath="$PROJECT_DIR$/EPG02-20192/libs/jgrapht-1.3.0/source/jgrapht-opt/src/test/test4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EPG02-20192/src/test/test5.iml" filepath="$PROJECT_DIR$/EPG02-20192/src/test/test5.iml" />
+    </modules>
+  </component>
+</project>
