@@ -32,6 +32,8 @@ public class AntColonyGraph {
         System.out.println("-----------TERCEIRA QUESTAO-----------");
         getClusteringCoefficient();
         System.out.println("--------------------------------------");
+        System.out.println("-----------QUARTA QUESTAO-----------");
+        assortativityCoefficient(colony);
 
     }
 
@@ -63,6 +65,33 @@ public class AntColonyGraph {
         }
     }
 
+    public static void assortativityCoefficient (Graph<String, DefaultEdge> graph) {
+        // from: https://github.com/Infeligo/jgrapht-metrics/blob/master/src/main/java/org/jgrapht/metrics/AssortativityCoefficientMetric.java
+    	double edgeCount = graph.edgeSet().size();
+        double n1 = 0, n2 = 0, dn = 0;
+
+        for (DefaultEdge e : graph.edgeSet()) {
+            int d1 = graph.degreeOf(graph.getEdgeSource(e));
+            int d2 = graph.degreeOf(graph.getEdgeTarget(e));
+
+            n1 += d1 * d2;
+            n2 += d1 + d2;
+            dn += d1 * d1 + d2 * d2;
+        }
+        n1 /= edgeCount;
+        n2 = (n2 / (2 * edgeCount)) * (n2 / (2 * edgeCount));
+        dn /= (2 * edgeCount);
+        
+        double assortativity =  (n1 - n2) / (dn - n2);
+        
+        System.out.println("Grau de assortividade: " + assortativity);
+        System.out.println("Devido ao grau de assortatividade negativo e próximo de -1, vemos que \n"
+        		+ "o grafo é quase completamente não assortativo, ou seja, as formigas não se relacionam com outras \n"
+        		+ "de grau semelhante."
+        		);
+        
+    }
+    
     private static void showMostInfluentialOnes(){
         AlphaCentrality<String, DefaultEdge> ac = new AlphaCentrality<>(colony, 0.001);
 
