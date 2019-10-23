@@ -2,7 +2,7 @@ import org.jgrapht.Graph;
 import org.jgrapht.alg.scoring.AlphaCentrality;
 import org.jgrapht.alg.scoring.BetweennessCentrality;
 import org.jgrapht.graph.DefaultEdge;
-import org.jgrapht.graph.DefaultWeightedEdge;
+import org.jgrapht.alg.scoring.ClusteringCoefficient;
 import org.jgrapht.graph.SimpleWeightedGraph;
 import org.jgrapht.io.EdgeProvider;
 import org.jgrapht.io.GmlImporter;
@@ -20,7 +20,7 @@ public class AntColonyGraph {
     public static void main(String[] args) {
 
         //Importing graph ps.: rewrite your path to antcolony1000.gml
-        String fileName = "/home/eduardo/graph/antcolony1000gml.gml";
+        String fileName = "./EPG-03/src/graph/antcolony1000gml.gml";
         colony = importDefaultGraphGML(colony, fileName);
 
         System.out.println("-----------PRIMEIRA QUESTAO-----------");
@@ -29,8 +29,9 @@ public class AntColonyGraph {
         System.out.println("-----------SEGUNDA QUESTAO-----------");
         showMostInfluentialOnes();
         System.out.println("--------------------------------------");
-
-
+        System.out.println("-----------TERCEIRA QUESTAO-----------");
+        getClusteringCoefficient();
+        System.out.println("--------------------------------------");
 
     }
 
@@ -81,6 +82,13 @@ public class AntColonyGraph {
         for(String ant : mostInfluential){
             System.out.println(cont++ + "ª Formiga mais influente: " + ant);
         }
+    }
+    
+    private static void getClusteringCoefficient() {
+    	ClusteringCoefficient<String, DefaultEdge> clusteringCoefficient = new ClusteringCoefficient<String, DefaultEdge>(colony);
+    	System.out.println("Coeficiente de clustering médio: " + clusteringCoefficient.getAverageClusteringCoefficient());
+    	System.out.println("Coeficiente de clustering global: " + clusteringCoefficient.getGlobalClusteringCoefficient());
+    	System.out.println("Devido ao baixo coeficiente de clustering global, vemos que há uma baixa tendencia de formação de grupos isolados.");
     }
 
     /**
